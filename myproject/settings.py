@@ -10,7 +10,7 @@ SECRET_KEY = 'your-secret-key'
 # SECURITY WARNING: don’t run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.100.103']
+ALLOWED_HOSTS = ['systemhoster.onrender.com']
 
 # Application definition
 INSTALLED_APPS = [
@@ -33,6 +33,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'myproject.urls'  # update if your project name is different
